@@ -1,0 +1,79 @@
+---
+import Layout from '../layouts/Layout.astro';
+import '@fontsource/playfair-display';
+import '@fontsource/lato';
+---
+
+<Layout>
+  <main class="min-h-screen">
+    <!-- Hero Section -->
+    <section class="relative h-screen">
+      <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e')] bg-cover bg-center"></div>
+      <div class="absolute inset-0 bg-black/30 backdrop-blur-[2px]"></div>
+      <div class="relative h-full flex flex-col items-center justify-center text-white text-center px-4">
+        <h1 class="font-playfair text-6xl md:text-8xl mb-6 drop-shadow-lg">Casa d'Oc</h1>
+        <p class="font-lato text-2xl md:text-3xl max-w-3xl mb-8 drop-shadow-md">Votre havre de paix en Occitanie</p>
+        <a href="#contact" class="bg-white/20 hover:bg-white/30 text-white font-lato px-8 py-3 rounded-full backdrop-blur-sm transition-all duration-300 border border-white/30 hover:border-white/50">
+          Réserver votre séjour
+        </a>
+      </div>
+    </section>
+
+    <!-- Présentation -->
+    <section class="py-20 px-4 bg-white">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="font-playfair text-3xl md:text-4xl text-center mb-8">Bienvenue à Casa d'Oc</h2>
+        <div class="font-lato text-lg leading-relaxed space-y-6">
+          <p>
+            Située à Nissan-lez-Enserune, entre Béziers et Narbonne, à seulement 13 km des plages, 
+            <span class="font-semibold">Casa d'Oc</span> vous accueille dans un cadre chaleureux et authentique.
+          </p>
+          <p>
+            Nichée dans une rue paisible, notre chambre d'hôtes est l'endroit idéal pour une escapade 
+            alliant détente, découverte et plaisir.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Réservation -->
+    <section id="contact" class="py-20 px-4 bg-stone-50">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="font-playfair text-3xl md:text-4xl text-center mb-12">Contact & Réservation</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              <h3 class="font-playfair text-xl mb-2">Email</h3>
+              <br /><a href="mailto:jlrigamonti@gmail.com" class="text-blue-600 hover:text-blue-800">jlrigamonti@gmail.com</a>
+            </div>
+          </div>
+          <div class="text-center">
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              <h3 class="font-playfair text-xl mb-2">Téléphone</h3>
+              <br /><a href="tel:+33607366328" class="text-blue-600 hover:text-blue-800">+33 6 07 36 63 28</a>
+            </div>
+          </div>
+          <div class="text-center">
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              <h3 class="font-playfair text-xl mb-2">Adresse</h3>
+              <address class="not-italic">
+                1 Rue de l'Horloge<br />
+                34440 Nissan-lez-Enserune
+              </address>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

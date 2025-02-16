@@ -1,0 +1,57 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <!-- SEO -->
+    <title>Casa d'Oc - Chambre d'hôtes de charme en Occitanie</title>
+    <meta name="description" content="Découvrez Casa d'Oc, une chambre d'hôtes de charme située à Nissan-lez-Enserune, entre Béziers et Narbonne. À 13 km des plages, profitez d'un séjour authentique en Occitanie." />
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Casa d'Oc - Chambre d'hôtes de charme en Occitanie" />
+    <meta property="og:description" content="Chambre d'hôtes de charme à Nissan-lez-Enserune, entre Béziers et Narbonne. À 13 km des plages." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/og-image.jpg" />
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BedAndBreakfast",
+        "name": "Casa d'Oc",
+        "description": "Chambre d'hôtes de charme située à Nissan-lez-Enserune, entre Béziers et Narbonne",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Nissan-lez-Enserune",
+          "postalCode": "34440",
+          "addressCountry": "FR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "43.3",
+          "longitude": "3.1"
+        },
+        "url": "https://casadoc.com",
+        "priceRange": "$$"
+      }
+    </script>
+  </head>
+  <body class="font-lato">
+    <slot />
+    <footer class="bg-stone-900 text-white py-6 px-4">
+      <div class="max-w-4xl mx-auto text-center space-y-2">
+        <p>&copy; {new Date().getFullYear()} Casa d'Oc. Tous droits réservés.</p>
+        <p class="text-sm text-stone-400">
+          Created with ♥ by <a href="https://ginovalton.fr" class="hover:text-white transition-colors duration-200">ginovalton.fr</a><br />
+          Take care.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
